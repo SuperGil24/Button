@@ -6,24 +6,20 @@
     <title>Tombol Bikini Menarik</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: linear-gradient(135deg, #f5f7fa 0%, #ffeef8 100%);
             font-family: 'Arial', sans-serif;
             margin: 0;
+            background: transparent;
         }
         
         .bikini-btn-container {
-            perspective: 1000px;
+            display: inline-block;
         }
         
         .bikini-btn {
             position: relative;
             padding: 18px 45px;
             text-decoration: none;
-            background: #ffbb00; /* Yellow color */
+            background: #ff9900; /* New orange-yellow color */
             color: black;
             border: 2px solid black;
             border-radius: 50px;
@@ -32,7 +28,7 @@
             text-transform: uppercase;
             letter-spacing: 2px;
             cursor: pointer;
-            box-shadow: 0 10px 20px rgba(255, 77, 121, 0.3);
+            box-shadow: 0 10px 20px rgba(255, 153, 0, 0.3);
             transform-style: preserve-3d;
             transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
             overflow: hidden;
@@ -40,7 +36,7 @@
         
         .bikini-btn:hover {
             transform: translateY(-5px) rotateX(15deg);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 15px 30px rgba(255, 153, 0, 0.3);
         }
         
         .bikini-btn:active {
@@ -125,7 +121,7 @@
     <div class="bikini-btn-container">
         <a href="https://saweria.co/SuperGil" class="bikini-btn" id="donationButton" target="_blank">
             <span class="shine"></span>
-            Klik Untuk Support 💖
+            Support My Stream! 💖
             <span class="money-emoji" style="left: 20%; animation-delay: 0.3s;">💰</span>
             <span class="money-emoji" style="left: 40%; animation-delay: 0.7s;">💰</span>
             <span class="money-emoji" style="left: 60%; animation-delay: 0.1s;">💰</span>
@@ -139,11 +135,11 @@
         document.getElementById('donationButton').addEventListener('click', function(e) {
             // Keep the animation effects
             this.style.transform = 'scale(0.95)';
-            this.style.boxShadow = '0 5px 15px rgba(255, 77, 121, 0.2)';
+            this.style.boxShadow = '0 5px 15px rgba(255, 153, 0, 0.2)';
             
             setTimeout(() => {
                 this.style.transform = '';
-                this.style.boxShadow = '0 15px 30px rgba(255, 77, 121, 0.4)';
+                this.style.boxShadow = '0 15px 30px rgba(255, 153, 0, 0.4)';
             }, 300);
             
             // Actual link handling is done via the href attribute
